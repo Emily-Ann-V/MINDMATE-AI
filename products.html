@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | MindMate AI</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">MindMate AI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="mb-4">How Are You Today?</h1>
+              <p>
+                Need to <a href="#mood-tracker-section">track your mood</a>,
+                <a href="#chat-bot-container">chat with Miya</a>, or explore the
+                <a href="#user-benefits-container">benefits</a> of using our
+                service
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weekly Mood Section -->
+      <section class="py-4" id="mood-tracker-section">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 mb-4">
+              <h2>Moody History</h2>
+            </div>
+
+            <div id="mood-tracking-container" class="row">
+              <div class="col">
+                <h1>😄</h1>
+                <p>Mon</p>
+              </div>
+              <div class="col">
+                <h1>😢</h1>
+                <p>Tue</p>
+              </div>
+              <div class="col">
+                <h1>😡</h1>
+                <p>Wed</p>
+              </div>
+              <div class="col">
+                <h1>😐</h1>
+                <p>Thu</p>
+              </div>
+              <div class="col">
+                <h1>😭</h1>
+                <p>Fri</p>
+              </div>
+              <div class="col">
+                <h1>😄</h1>
+                <p>Sat</p>
+              </div>
+              <div class="col">
+                <h1>😡</h1>
+                <p>Sun</p>
+              </div>
+
+              <!-- Add Today's Mood Dropdown -->
+              <div class="col text-center">
+                <!-- Add Mood Button -->
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="mood-select-btn"
+                >
+                  ➕
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <span class="dropdown-item-text text-muted"
+                      >Today's Mood:</span
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-decoration-none mood-select-option"
+                      href="#"
+                      >😄 Happy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-decoration-none mood-select-option"
+                      href="#"
+                      >😭 Sad</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-decoration-none mood-select-option"
+                      href="#"
+                      >😥 Stressed</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-decoration-none mood-select-option"
+                      href="#"
+                      >😡 Angry</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item text-decoration-none mood-select-option"
+                      href="#"
+                      >😐 Neutral</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chat with Miya Section -->
+      <section class="py-4" id="chat-bot-container">
+        <div
+          class="container d-flex flex-column align-items-center text-center"
+        >
+          <div class="card border-primary mb-3 w-100">
+            <div class="card-body">
+              <h2 class="card-title mb-4">Chatting With Miya</h2>
+              <p class="card-text mb-4">
+                Feeling down or need advice? Chat with Miya now.
+              </p>
+
+              <!-- Chat Button -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#chat-bot"
+              >
+                Chat
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chatbot (Miya) Modal -->
+      <div class="modal fade" id="chat-bot" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Miya</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p class="mb-2">
+                Hi there! Let’s get started with your wellness journey.
+              </p>
+
+              <!-- Option Buttons -->
+              <div class="mb-2 d-flex flex-column gap-2" id="chat-buttons">
+                <button class="btn btn-primary option-btn" id="start-cbt">
+                  Start CBT
+                </button>
+                <button class="btn btn-primary option-btn" id="feeling-down">
+                  Feeling Down
+                </button>
+                <button class="btn btn-primary option-btn" id="need-advice">
+                  Need Advice
+                </button>
+              </div>
+
+              <p id="miya-response"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Benefits Section -->
+      <section class="py-4" id="user-benefits-container">
+        <div class="container">
+          <div class="row justify-content-center g-4">
+            <h2 class="mb-4 text-center">The Benefits</h2>
+
+            <!-- Benefit: Affordable -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card bg-light mb-3" style="max-width: 20rem">
+                <div class="card-header text-center">Affordable</div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tiers For Every Budget</h5>
+                  <p class="card-text">
+                    Our plans are built around budget-friendly choices, making
+                    it easy to find the right fit for your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefit: Accessible -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card bg-light mb-3" style="max-width: 20rem">
+                <div class="card-header text-center">Accessible</div>
+
+                <div class="card-body text-center">
+                  <h5 class="card-title">Available 24/7</h5>
+                  <p class="card-text">
+                    Miya is always here for you, and is ready to help straight
+                    from your device.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefit: Personalised -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card bg-light mb-3" style="max-width: 20rem">
+                <div class="card-header text-center">Personalised</div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tailored To Your Needs</h5>
+                  <p class="card-text">
+                    Support and recommendations centred around you, your goals,
+                    and your journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-2 mt-4" data-bs-theme="dark">
+      <div
+        class="container text-center d-flex flex-column flex-md-row justify-content-between align-items-center small"
+      >
+        <!-- Links -->
+        <div>
+          <a href="#" class="footer-link footer-legal-link">Terms</a> |
+          <a href="#" class="footer-link footer-legal-link">Privacy</a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">© 2025 MindMate AI</div>
+
+        <!-- Social icons -->
+        <div>
+          <a
+            href="https://facebook.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+              alt="Facebook"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+              alt="Twitter"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+              alt="LinkedIn"
+              width="16"
+              height="16"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

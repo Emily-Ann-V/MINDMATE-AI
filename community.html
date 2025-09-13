@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community | MindMate AI</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">MindMate AI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="community.html">Community</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Posts Section -->
+      <section class="py-4">
+        <div class="container d-flex flex-column align-items-center">
+          <!-- Hero Image -->
+          <!-- Image by <a href="https://pixabay.com/users/roszie-6000120/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7282048">Rosy / Bad Homburg / Germany</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7282048">Pixabay</a> -->
+          <img
+            src="images/community-img.png"
+            class="img-fluid rounded"
+            style="max-width: 300px"
+            alt="Illustration of 6 balloons arranged in rainbow colours"
+          />
+
+          <h1 class="mb-4">Let's Grow Together</h1>
+
+          <p class="mb-4">
+            Share your thoughts or read what others have to say.
+          </p>
+
+          <!-- Add Post Form -->
+          <div class="card border-primary mb-3 w-100" style="max-width: 600px">
+            <div class="card-body py-3 px-3">
+              <h4 class="card-title text-center mb-3">Add a Post</h4>
+              <form id="add-post-form">
+                <div class="mb-2">
+                  <textarea
+                    class="form-control form-control-sm"
+                    id="postContent"
+                    rows="2"
+                    placeholder="What's on your mind..."
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Post Button -->
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  id="add-post-btn"
+                >
+                  Post
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Posts Feed -->
+          <div id="posts-container">
+            <!-- Mindful User -->
+            <div class="card border-info mb-3 w-100" style="max-width: 600px">
+              <div class="card-header post-header">
+                Mindful User • 2 Hours Ago
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  I was talking with a friend the other day. She recommended
+                  yoga for stress, and it’s been doing wonders!
+                </p>
+              </div>
+            </div>
+
+            <!-- MindMate AI -->
+            <div
+              class="card border-success mb-3 w-100"
+              style="max-width: 600px"
+            >
+              <div class="card-header post-header">
+                MindMate AI • 4 Hours Ago
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Have you booked your coaching session with Miya yet?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-2 mt-4" data-bs-theme="dark">
+      <div
+        class="container text-center d-flex flex-column flex-md-row justify-content-between align-items-center small"
+      >
+        <!-- Links -->
+        <div>
+          <a href="#" class="footer-link footer-legal-link">Terms</a> |
+          <a href="#" class="footer-link footer-legal-link">Privacy</a>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">© 2025 MindMate AI</div>
+
+        <!-- Social icons -->
+        <div>
+          <a
+            href="https://facebook.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+              alt="Facebook"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://twitter.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+              alt="Twitter"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://instagram.com/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+              width="16"
+              height="16"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            class="mx-1 footer-link footer-social-link"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+              alt="LinkedIn"
+              width="16"
+              height="16"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
