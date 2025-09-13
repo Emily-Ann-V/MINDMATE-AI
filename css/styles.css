@@ -1,0 +1,132 @@
+/* ===========================
+   Reset
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   Fonts
+=========================== */
+
+/* Zatura Font */
+@font-face {
+  font-family: "Zatura";
+  src: url("../fonts/Zatura.otf") format("opentype");
+}
+
+/* Vox Light Font */
+@font-face {
+  font-family: "Vox-Light";
+  src: url("../fonts/Vox-Light.ttf") format("truetype");
+}
+
+/* Vox Regular Font */
+@font-face {
+  font-family: "Vox-Regular";
+  src: url("../fonts/Vox-Regular.ttf") format("truetype");
+}
+
+/* ===========================
+   Text Styles
+=========================== */
+
+/* Body & List of Features */
+body,
+.features-li {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+.text-slogan,
+.card-header {
+  font-family: "Vox-Light", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Links & Buttons */
+a,
+.btn {
+  text-transform: uppercase;
+}
+
+/* Nav Links & Footer Copyright */
+.nav-link,
+.footer-copyright {
+  font-family: "Vox-Regular", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Post Headers */
+.post-header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+
+/* ===========================
+   Logo & Branding
+=========================== */
+
+/* Main Logo */
+.navbar-brand {
+  font-family: "Zatura", sans-serif;
+  font-size: 2rem;
+}
+
+/* In-Text Logo */
+.text-brand {
+  font-family: "Zatura", sans-serif;
+  font-weight: normal;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+/* Footer Links & Active Nav Links */
+.footer-link,
+.nav-link.active,
+.features-li {
+  text-decoration: none;
+}
+
+/* Makes Footer Icons White */
+.footer-social-link {
+  filter: brightness(0) invert(1);
+}
+
+/* Overall Links Hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Social Links, Logo, Features, Buttons Hover */
+.footer-social-link:hover,
+.navbar-brand:hover,
+.features-li:hover,
+.btn:hover {
+  text-decoration: none;
+}
+
+/* ===========================
+   Cards & Images
+=========================== */
+
+/* Price Card Selected Button */
+.tier-card-btn.selected {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* Images On Services Page */
+.services-img {
+  width: 100%;
+  height: 200px; /* all images same height */
+  object-fit: cover; /* crops image nicely without stretching */
+}
